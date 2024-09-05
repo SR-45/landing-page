@@ -2,8 +2,30 @@
     font-family: Roboto, sans-serif;
 }
 
-img {
-    width: 50px;
+
+.ws {
+    max-height: 200px;
+
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: 5px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 5rem;
+
 }
 
 body {
@@ -29,12 +51,19 @@ flex-basis : 0;   ➜ The div does not have a starting value as such and will
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 10rem;
     align-items: center;
+    padding-top: 20px;
 }
 
 .top {
     background-color: #1F2937;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .links {
@@ -49,10 +78,24 @@ flex-basis : 0;   ➜ The div does not have a starting value as such and will
     color: #F9FAF8;
 }
 
+.mid-title {
+        font-size: 48px;
+        font-weight: bold
+    
+}
 .hero-secondary,
-.header {
+.header{
     size: 18px;
     color: #E5E7EB;
+}
+
+
+
+
+.left .button {
+    width: 10rem;
+    border-style: none;
+    margin-top: 20px;
 }
 
 button,
@@ -88,8 +131,30 @@ button {
     align-items: center;
     justify-content: space-around;
     box-sizing: border-box;
-    padding: 10px;
+    flex-basis: 75%;
 
+}
+
+
+
+.call-bg {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.call-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
@@ -100,7 +165,3 @@ button {
     justify-content: center;
 }
 
-.call-bg {
-    background-color: white;
-    padding: 2em 20em;
-}
