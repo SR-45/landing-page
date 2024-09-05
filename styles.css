@@ -13,12 +13,18 @@
     align-items: center;
     justify-content: center;
 }
+
+.logo {
+    font-size: 30px;
+}
+
 .left {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
     gap: 5px;
 }
+
 .top {
     display: flex;
     justify-content: space-between;
@@ -50,9 +56,7 @@ flex-basis : 0;   ➜ The div does not have a starting value as such and will
 .header {
     background-color: #1F2937;
     display: flex;
-    justify-content: space-between;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    justify-content: space-around;
     align-items: center;
     padding-top: 20px;
 }
@@ -79,17 +83,36 @@ flex-basis : 0;   ➜ The div does not have a starting value as such and will
 }
 
 .mid-title {
-        font-size: 48px;
-        font-weight: bold
-    
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    padding-bottom: 2rem;
 }
+
+.mid-content {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    flex-wrap: wrap;
+}
+
 .hero-secondary,
-.header{
+.header {
     size: 18px;
     color: #E5E7EB;
 }
 
+.info img {
+    height: 200px;
+    border-radius: 20px;
 
+}
+
+.info {
+    text-align: center;
+    max-width: 200px;
+
+}
 
 
 .left .button {
@@ -112,12 +135,14 @@ button {
     border-radius: 5px;
     border-color: white;
     border-style: solid;
+    width: 10rem;
+    ;
 }
 
 .bot {
     background-color: #E5E7EB;
     color: #1F2937;
-    size: 36px;
+    font-size: 36px;
     font-style: italic;
 }
 
@@ -132,6 +157,8 @@ button {
     justify-content: space-around;
     box-sizing: border-box;
     flex-basis: 75%;
+    padding: 3rem 2em;
+    gap: 20px;
 
 }
 
@@ -141,7 +168,7 @@ button {
     display: flex;
     background-color: white;
     justify-content: center;
-    padding-top: 20px;
+    padding: 5rem 0;
 }
 
 .call-text {
@@ -155,6 +182,8 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .footer {
@@ -165,3 +194,17 @@ button {
     justify-content: center;
 }
 
+.bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 10rem;
+}
+
+.person {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 10px;
+}
